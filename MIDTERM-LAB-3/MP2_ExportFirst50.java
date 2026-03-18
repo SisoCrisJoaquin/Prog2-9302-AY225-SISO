@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * =====================================================
- * Machine Problem 15: Export First 50 Rows to CSV
+ * Machine Problem 2: Export First 50 Rows to CSV
  * Student: Siso, Cris Joaquin E.
  * Course: Programming 2
  * Date: March 18, 2026
@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter;
  *   the original format and column structure.
  * =====================================================
  */
-public class MP15_ExportFirst50 {
+public class MP2_ExportFirst50 {
 
     // Variable to store all CSV records
     static List<String[]> records = new ArrayList<>();
@@ -36,7 +36,7 @@ public class MP15_ExportFirst50 {
         try {
             // Step 1: Display header and instructions
             System.out.println("=".repeat(60));
-            System.out.println("  MP15: EXPORT FIRST 50 ROWS TO CSV");
+            System.out.println("  MP2: EXPORT FIRST 50 ROWS TO CSV");
             System.out.println("=".repeat(60));
             System.out.print("\nEnter source CSV file path: ");
             String sourceFilePath = scanner.nextLine().trim();
@@ -81,14 +81,14 @@ public class MP15_ExportFirst50 {
 
     /**
      * Generates output filename with timestamp
-     * Format: MP15_Export_YYYY-MM-DD_HH-MM-SS.csv
+     * Format: MP2_Export_YYYY-MM-DD_HH-MM-SS.csv
      * 
      * @return Generated filename with timestamp
      */
     static String generateOutputFileName() {
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
-        return "MP15_Export_" + now.format(formatter) + ".csv";
+        return "MP2_Export_" + now.format(formatter) + ".csv";
     }
 
     /**

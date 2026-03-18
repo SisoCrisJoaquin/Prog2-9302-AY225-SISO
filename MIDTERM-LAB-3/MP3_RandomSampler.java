@@ -3,7 +3,7 @@ import java.util.*;
 
 /**
  * =====================================================
- * Machine Problem 16: Random Dataset Sampler
+ * Machine Problem 3: Random Dataset Sampler
  * Student: Siso, Cris Joaquin E.
  * Course: Programming 2
  * Date: March 18, 2026
@@ -14,7 +14,7 @@ import java.util.*;
  *   formatted table and provides statistics about the sample.
  * =====================================================
  */
-public class MP16_RandomSampler {
+public class MP3_RandomSampler {
 
     // Variable to store all CSV records
     static List<String[]> records = new ArrayList<>();
@@ -34,7 +34,7 @@ public class MP16_RandomSampler {
         try {
             // Step 1: Display header and instructions
             System.out.println("=".repeat(60));
-            System.out.println("  MP16: RANDOM DATASET SAMPLER");
+            System.out.println("  MP3: RANDOM DATASET SAMPLER");
             System.out.println("=".repeat(60));
             System.out.print("\nEnter CSV file path: ");
             String filePath = scanner.nextLine().trim();

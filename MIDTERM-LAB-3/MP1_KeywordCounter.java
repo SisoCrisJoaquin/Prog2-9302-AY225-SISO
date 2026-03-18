@@ -3,7 +3,7 @@ import java.util.*;
 
 /**
  * =====================================================
- * Machine Problem 14: Count Keyword Occurrences
+ * Machine Problem 1: Count Keyword Occurrences
  * Student: Siso, Cris Joaquin E.
  * Course: Programming 2
  * Date: March 18, 2026
@@ -14,7 +14,7 @@ import java.util.*;
  *   across all columns and provides a detailed frequency count.
  * =====================================================
  */
-public class MP14_KeywordCounter {
+public class MP1_KeywordCounter {
 
     // Variable to store all CSV records
     static List<String[]> records = new ArrayList<>();
@@ -31,7 +31,7 @@ public class MP14_KeywordCounter {
         try {
             // Step 1: Prompt user for CSV file path
             System.out.println("=".repeat(60));
-            System.out.println("  MP14: COUNT KEYWORD OCCURRENCES");
+            System.out.println("  MP1: COUNT KEYWORD OCCURRENCES");
             System.out.println("=".repeat(60));
             System.out.print("\nEnter CSV file path: ");
             String filePath = scanner.nextLine().trim();
